@@ -175,6 +175,7 @@ const uploadFile = async (req, res) => {
       size: fileSizeMB,
       path: encryptedFilePath,
       encrypted: true,
+      iv: iv.toString('hex'),
       uploaded: new Date()
     });
 

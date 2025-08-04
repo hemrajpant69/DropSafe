@@ -44,11 +44,15 @@ export default (sequelize) => {
       allowNull: false,
       defaultValue: true,
     },
+    iv: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     uploaded: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
-    },
+    }
   }, {
     tableName: 'files',
     timestamps: false,
